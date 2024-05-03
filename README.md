@@ -6,3 +6,5 @@ Modules to be installed:
 Pyperclip: pip install pyperclip
 Tkinter: pip install tkinter
 
+The clipboard.txt is where all the copied data will be stored
+
