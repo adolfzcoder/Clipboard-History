@@ -38,7 +38,7 @@ def display_clipboard():
         text_area = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=40, height=20)
         text_area.pack(fill="both", expand=True)
         
-        for message in messages:
+        for message in messages[::-1]:
             message_text = message + "\n\n"
             text_area.insert(tk.END, message_text)
             text_area.tag_add("copyable", "end-2l", "end-1c")
